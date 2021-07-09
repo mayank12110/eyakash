@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>self booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+<div id="fii">
+   
+ <a href=""> <img src="icon.png" alt="" id="pic"></a>
+  <a href="" id="fi">ABOUT</a>
+
+<a href=""  id="fi">SERVICES</a>
+<a href="" id="fi">REGISTER NOW</a> 
+<a href="" id="fi">HEALTH PLANS</a>
+<a href="" id="fi">Dr.Ashok C</a>
+</div>
+<div id="flip">*Click To Read NOTICE*</div>
+<div id="panel">If you are an existing customer, type your Phone# to retrieve your details</div>
+<div id="sec" >
+    <p>NAME <input type="text" ></p>
+    <p >PHONE NUMBER     <input type="number"> <button >CHECK NUMBER</button></p>
+    <p>ADDRESS <textarea name="ADDRESS" id="" cols="50" rows="10"></textarea></p>
+  <p>GENDER : MALE<input type="radio"> FEMALE<input type="radio"></p>
+  <p>DATE OF BIRTH <input type="date"></p>
+  <p>EMAIL <input type="email"></p>
+  <p>SELCET DATE AND TIME <input type="date" > <input type="time"></p>
+  <p>SELECT TEST <input type="search"></p>
+  <p>COMMENTS <input type="text" maxlength="5cm"></p>
+  <p>UPLOAD PRESCRIPTION : Presc1<input type="file" placeholder="prsc1">Presc2<input type="file">Presc3<input type="file"></p>
+<p>*File Must Be Less Than 2MB Each*</p>
+<p><button class="btn">CLEAR</button>
+<button class="btn">BOOK APPOINTMENT</button></p>
+</div>
+<footer>
+    <h5>DEVELOPED BY MAYANK SINGH :)</h5>
+    <p id="demo"></p>
+</footer>
+
+</section>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+    });
+    const d = new Date();
+document.getElementById("demo").innerHTML = d;
+    </script>
+</html>
